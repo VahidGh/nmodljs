@@ -21,7 +21,7 @@ To get started with nmodl.js, follow these steps:
 
    ```bash
    git clone https://github.com/vahidgh/nmodljs.git
-   cd nmodl.js
+   cd nmodljs
    ```
 
 2. **Install Dependencies**: Install the required dependencies using npm.
@@ -56,11 +56,13 @@ To run and test NMODL grammar with ANTLR4, follow these steps:
    antlr4 nmodl.g4
    ```
 
-3. **Test**: Use `src/grammar/rule_test.sh` to test .mod files in `/examples` directory.
+3. **Test**: Use `src/grammar/rule_test.sh` to test `.mod` files in the `examples` directory.
+   Make sure you have the `antlr` `jar` file in the `dev/g4-output` directory.
 
    ```
    bash rule_test.sh
    ```
+   Or
    ```
    cat examples/is.mod | bash rule_test.sh
    ```
@@ -72,7 +74,7 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/vahidgh/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/vahidgh/nmodljs/LICENSE) file for details.
 
 ## Acknowledgments
 
