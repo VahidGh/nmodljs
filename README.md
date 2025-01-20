@@ -73,10 +73,10 @@ To run and test NMODL grammar with ANTLR4, follow these steps:
 
    <div 
       style="overflow-x: auto; border: 1px solid #ccc;" 
-      onclick="window.open(['https://raw.githubusercontent.com/VahidGh/nmodljs/refs/heads/master/antlr4_parse_tree_isi.svg', '_blank');"
+      onclick="window.open('https://raw.githubusercontent.com/VahidGh/nmodljs/refs/heads/master/antlr4_parse_tree_isi.svg', '_blank');"
    >
       <img 
-         src="antlr4_parse_tree_isi.svg" 
+         src="https://raw.githubusercontent.com/VahidGh/nmodljs/refs/heads/master/antlr4_parse_tree_isi.svg" 
          style="width: 1200px; height: auto;"
          alt="Click to enlarge parse tree"
       />
