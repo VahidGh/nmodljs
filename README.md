@@ -2,7 +2,7 @@
 
 ## Overview
 
-[nmodl.js](https://github.com/yourusername/nmodl.js) is a project aimed at providing a [NEURON simulator](http://neuron.yale.edu/neuron/)  implemented in JavaScript. This project leverages the capabilities of JavaScript to create a flexible and interactive environment for simulating neuronal models defined using the NEURON Model Description Language ([NMODL](https://www.neuron.yale.edu/neuron/static/docs/help/neuron/nmodl/nmodl.html)). 
+[nmodl.js](https://github.com/vahidgh/nmodljs) is a project aimed at providing a [NEURON simulator](http://neuron.yale.edu/neuron/)  implemented in JavaScript. This project leverages the capabilities of JavaScript to create a flexible and interactive environment for simulating neuronal models defined using the NEURON Model Description Language ([NMODL](https://www.neuron.yale.edu/neuron/static/docs/help/neuron/nmodl/nmodl.html)). 
 
 With nmodl.js, developers can utilize modern web technologies to run simulations directly in the browser, enabling real-time visualization and manipulation of neuronal models.
 
@@ -47,6 +47,8 @@ To get started with nmodl.js, follow these steps:
 
 To run and test NMODL grammar with ANTLR4, follow these steps:
 
+### Option 1: Using Antlr4 Java Runtime
+
 1. **Install ANTLR4**: Ensure you have ANTLR4 installed. You can download it from [ANTLR's official website](https://www.antlr.org/download.html).
 
 2. **Generate the Parser**: Use ANTLR4 to generate the parser and lexer from the grammar file.
@@ -64,10 +66,39 @@ To run and test NMODL grammar with ANTLR4, follow these steps:
    ```
    Or
    ```
-   cat examples/is.mod | bash rule_test.sh
+   cat examples/isi.mod | bash rule_test.sh
    ```
 
+   An output like this can be seen:
 
+   <div 
+      style="width: 800px; height: 600px; overflow-x: auto; overflow-y: hidden; border: 1px solid #ccc; cursor: pointer;" 
+      onclick="window.open('antlr4_parse_tree_isi.svg', '_blank');"
+   >
+      <img 
+         src="antlr4_parse_tree_isi.svg" 
+         style="width: auto; height: 100%;"
+         alt="Click to enlarge parse tree"
+      />
+   </div>
+
+
+### Option 2: Using Antlr4ts TypeScript Parser Generator
+
+1. **Install ANTLR4ts**: 
+   ```
+   npm install antlr4ts
+   ```
+
+2. **Generate the Parser**: 
+
+   ```
+   cd src/grammar
+   antlr4ts nmodl.g4
+   ```
+
+3. **Test**: Uder development...
+   
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
